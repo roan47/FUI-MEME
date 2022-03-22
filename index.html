@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="learn about your favorite muggle" <!-- Alt Shift F --Format current document -->
+    <!--Ctrl B -- toggle side bar -->
+    <!-- Ctrl J -- toggle output window (at the bottom) -->
+    <!-- Ctrl S -- save current document -->
+    <!-- Ctrl F5 -- Save, build, and run the current document -->
+    <!-- Ctrl K, C -- insert a comment -->
+    <!-- Ctrl K, U -- uncomment -->
+
+    <meta name="keywords" content="education, muggle, education for the wizarding world" <meta name="author"
+        content="Roan Leffew" />
+
+    <title>Muggle Education Made Easy</title>
+
+    <script src="https://kit.fontawesome.com/e95fe79da0.js" crossorigin="anonymous"></script>
+    
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+
+    <!--Custom.css-->
+    <link rel="stylesheet" href="css/custom.css"/>
+    <style>
+        /*
+        comment
+        another comment
+        
+        */
+        nav {
+            padding: 1% 10%
+            /* top/bottom, Left/right */
+        }
+        #nav-right {
+            /* ID Selector */
+            width: 75%;
+            display: inline-block;
+        }
+        nav a {
+            /* descendent selector */
+            text-decoration: none;
+        }
+        nav a#navbar-brand{
+            width: 15%;
+            margin-left: 5%;
+            margin-top: 2%;
+            display: inline-block;
+
+        }
+        nav ul {
+            text-align: right;
+        }
+        nav ul li:not(:last-child){
+            margin: 0 2%;
+            padding: 1% 2%;
+            border-radius: 2px; /*rounds the corners*/
+        }
+        nav ul li:last-child {
+            /* only applied to the las <li> in a <ul> in a <nav> */
+                margin-left: 2%;
+                padding: 1% 1% 1% 2%;
+                /* top, right, bottom, left*/
+
+        }
+
+        /* class selector */
+        .nav-item {
+            list-style: none; /*gets rid of dots*/
+            font-size: 24px;
+            display: inline-block;
+        
+        }
+        #nav-right .brand-container a {
+            margin: 0 1%;
+
+        }
+
+        .brand-container {
+            text-align: right;
+            padding-bottom: 3.5%;
+        }
+        /*#region Color Notes*/
+      /*
+        There are many ways to incorporate colors into your website. 
+        The first is using named colors. These are a limited amount of color options
+        that are supported by most modern web browsers. (140 options)
+
+        There are also color coding systems. With these, you get more specialized 
+        options
+            - Most of them make use of numeric values to represent levels of red, 
+            green, and blue (referred to as RGB)
+            - Using RGB there are 16 million different color options
+
+        Hexadecimal Notation
+        #RRGGBB
+        Original color coding system, but it is not easily readable
+        0 is the first digit (you start at zero)
+        Second digit 0-9 and A(10)-F(15)
+        16 causes the first digit to increment and a second digit is added starting
+        at 0 (16 = 10)
+        Pattern continues up to 255
+
+        Hex Shorthand
+        #RGB
+        Shortens the numeric representation of a color to 3 digits from 6
+        This limits color options to 4096
+        Can only be used when there are repeating digits in each color value
+        ex. #229988 => #298
+
+        Percentage Ranges
+        rbg(R%, G%, B%) 1-100% for each
+
+        Numeric Ranges 
+        rbg(r, g, b) uses standard decimal numbers for each color 0-255
+
+        RGBA
+        rgba(r, g, b, a) 
+        Alpha adds transparency and should be between 0(none) and 1(full)
+      */
+      /*#endregion*/
+      nav .fa-brands {
+          color: #b4001e;
+          /* Hexadecimal */
+      }
+      nav ul li:hover{
+          background-color: rgb(122, 103, 134);
+      }
+      nav ul li a:hover{
+          color:black;
+      }
+      nav ul li:last-child:hover{
+          padding-right: 2%;
+      }
+      nav ul li.active {
+          background-color: rgb(163, 183, 191);
+      }
+      
+      /*#region Font Notes*/
+      /*
+        Fonts are declared in a font-family. Reading from left to right, this is a list of 
+        fonts starting with the specific desired font followed by a list of back-ups until
+        you get to a generic font type at the end. 
+
+        The fonts available for the browser to use are the fonts on the specific device accessing
+        the website. 
+
+        Web-Safe fonts are those that are widely available across most devices. This is a moving target. 
+
+        Alternatively, you can import fonts through a CDN to ensure the same font is used to render your site for 
+        all devices. 
+
+        Font sizes can be declared in pixels (px) which are fixed width values. Can also use relative units of measure, 
+        like em's.
+            Stands for the letter M - widest letter in English language
+            Font-Size is figured based on the font-size of the parent element
+            Example: if parent has font-size of 12px and child has font-size of 1.5em, then child would have 18px font
+            Best practice is to declare font-size in px at body level and use em's for all other values. 
+      */
+      /*#endregion*/
+      nav ul li a {
+          font-family: 'Comfortaa', cursive;
+          color:#4D6873;
+
+      }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="navbar-brand">
+            <img src="images/MEME-logo-withText-blue.png" alt="blue sorting hat logo"
+                style="display: inline-block; width: 350px" />
+        </a>
+        <div id="nav-right">
+            <div class="brand-container">
+                <!-- display social media icons from font awesome-->
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook-square fa-2xl"></i>
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <i class="fa-brands fa-twitter-square fa-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+            </div>
+            <ul>
+                <li class="nav-item active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="classes.html">Classes</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header class="margin-top-5 margin-bottom-15">
+        <div id="header-image">
+            <img src="images/open-book.jpg" />
+        </div>
+        <article class="header-right-content">
+            <h1 class="heading-style-top">
+                Dive into the Mysterious World of Muggles
+            </h1>
+            <p class="font-125 text-justify">
+                Wizard ipsum dolor amet dolore enim consectetur dolore ad excepteur
+                commodo aliqua lorem non Wizard Ipsum is how wizards working with
+                non-magical folk and slip a little magic into their workday—without
+                breaching any secrecy laws. It’s the original text of Lorum Ipsum.Many
+                know lorum ipsum as the kind of Latin-looking filler copy used on
+                website and print material mock ups. What isn’t widely known is that
+                Lorum Ipsum isn’t the jumbled Latin created by Cicero. 
+            </p>
+            <a href="classes.html" class="primary-button-large">See Classes</a>
+        </article>
+        <div class="clear"></div>
+        
+    </header>
+    
+    <main>
+        <section class="section-padding bg-gray" id="about-us">
+            <div class="left-content">
+                <h2 class="heading-style-secondary">
+                    Allow our wealth of experience to guide your exploration
+                </h2>
+            </div>
+            <div class="right-content">
+                <p class="font-125 text-justify font-gray">
+                    Many know lorum ipsum as the kind of Latin-looking filler copy used
+                    on website and print material mock ups. What isn’t widely known is
+                    that Lorum Ipsum isn’t the jumbled Latin created by Cicero. Well, it
+                    was created by Cicero, but Cicero was a wizard. It's only now, thanks
+                    to wizarding authors like JK Rowling and JRR Tolkien, who have
+                    hidden the wizarding work in plain sight. We hope you enjoy using
+                    and sharing Wizard Ipsum for all your creative projects, the magical
+                    and non-magical. 
+                </p>
+            </div>
+            <div class="clear"></div>
+
+        </section>
+      
+        <section class="section-padding" id="services">
+            <div class="services-item font-125">
+              <div class="service-icon">
+                <i class="fa-solid fa-hands-holding fa-2xl"></i>
+              </div>
+              <h3>Hands-On Learning</h3>
+              <p>
+                It's only now, thanks to wizarding authors like JK Rowling and JRR Tolkien, who have hidden the wizarding
+                world in plain sight.
+              </p>
+            </div>
+            <div class="services-item font-125">
+              <div class="service-icon">
+                <i class="fa-solid fa-chalkboard-user fa-2xl"></i>
+              </div>
+              <h3>Live Instruction</h3>
+              <p>
+                It's only now, thanks to wizarding authors like JK Rowling and JRR Tolkien, who have hidden the wizarding
+                work in plain sight.
+              </p>
+            </div>
+            <div class="services-item font-125">
+              <div class="service-icon">
+                <i class="fa-solid fa-user-plus fa-2xl"></i>
+              </div>
+              <h3>Valuable Experience</h3>
+              <p>
+                It's only now, thanks to wizarding authors like JK Rowling and JRR Tolkien, who have hidden the wizarding
+                work in plain sight.
+              </p>
+            </div>
+          </section>
+          <section class="section-padding" id="call-to-action">
+            <article>
+              <div class="grid-image-left">
+                <img alt="man with top hat standing on busy sidewalk" src="images/wizard-in-crowd.jpg" />
+              </div>
+              <div class="grid-content-right heading-accent-right-text">
+                <h3 class="heading-style-secondary font-gray text-right">Take the First Step Today</h3>
+                <p class="font-125 text-justify">
+                  Wizard ipsum dolor amet dolore enim consectetur dolore ad excepteur commodo aliqua lorem non Wizard Ipsum
+                  is how wizards working with non-magical folk and slip a little magic into their workday—without breaching
+                  any secrecy laws. It’s the original text of Lorum Ipsum. Many know lorum ipsum as the kind of
+                  Latin-looking filler copy used on website and print material mock ups. What isn’t widely known is that
+                  Lorum Ipsum isn’t the jumbled Latin created by Cicero. Well, it was created by Cicero, but Cicero was a
+                  wizard. It's only now, thanks to wizarding authors like JK Rowling and JRR Tolkien, who have hidden the
+                  wizarding work in plain sight. We hope you enjoy using and sharing Wizard Ipsum for all your creative
+                  projects, the magical and non-magical.
+                </p>
+                <a href="contact.html" class="primary-button-large">Contact Us</a>
+              </div>
+            </article>
+            <article class="margin-top-5">
+              <div class="grid-content-left heading-accent-left-text">
+                <h3 class="heading-style-secondary font-gray text-left">Meet Our Team</h3>
+                <p class="font-125 text-justify">
+                  Wizard ipsum dolor amet dolore enim consectetur dolore ad excepteur commodo aliqua lorem non Wizard Ipsum
+                  is how wizards working with non-magical folk and slip a little magic into their workday—without breaching
+                  any secrecy laws. It’s the original text of Lorum Ipsum. Many know lorum ipsum as the kind of
+                  Latin-looking filler copy used on website and print material mock ups. What isn’t widely known is that
+                  Lorum Ipsum isn’t the jumbled Latin created by Cicero. Well, it was created by Cicero, but Cicero was a
+                  wizard. It's only now, thanks to wizarding authors like JK Rowling and JRR Tolkien, who have hidden the
+                  wizarding work in plain sight. We hope you enjoy using and sharing Wizard Ipsum for all your creative
+                  projects, the magical and non-magical.
+                </p>
+                <a href="team.html" class="primary-button-large">Meet Us</a>
+              </div>
+              <div class="grid-image-right">
+                <img alt="man with wizard shirt sitting at computer" src="images/wizard-at-computer2.jpg" />
+              </div>
+            </article>
+          </section>
+        </main>
+    
+        <footer class="bg-light-gray">
+          <div class="text-center">
+            <div class="margin-bottom-2">
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-square fa-2xl"></i>
+              </a>
+              <a href="https://twitter.com/">
+                <i class="fa-brands fa-twitter-square fa-2xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+              </a>
+            </div>
+            <p class="font-black font-125">&copy; Tek Ladder. All rights reserved.</p>
+          </div>
+        </footer>  
+</body>
+
+</html>
