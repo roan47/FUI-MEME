@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Learn about your favorite muggle subjects"
+    />
+    <meta
+      name="keywords"
+      content="education, muggle, education for the wizarding world"
+    />
+    <meta name="author" content="Your Name Here" />
+    <title>Muggle Education Made Easy</title>
+    <script
+      src="https://kit.fontawesome.com/e8ddeadb44.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+      nav {
+        padding: 1% 10%;
+      }
+
+      div#nav-right {
+        width: 75%;
+        display: inline-block;
+      }
+
+      nav a {
+        text-decoration: none;
+      }
+
+      nav a#navbar-brand {
+        width: 15%;
+        margin-left: 5%;
+        margin-top: 2%;
+        display: inline-block;
+      }
+
+      nav ul {
+        text-align: right;
+      }
+
+      nav ul li:not(:last-child) {
+        margin: 0 2%;
+        padding: 1% 2%;
+        border-radius: 2px;
+      }
+
+      nav ul li:last-child {
+        margin-left: 2%;
+        padding: 1% 1% 1% 2%;
+      }
+
+      .nav-item {
+        display: inline-block;
+        list-style: none;
+        font-size: 24px;
+      }
+
+      #nav-right .brand-container a {
+        margin: 0 1%;
+      }
+
+      .brand-container {
+        text-align: right;
+        padding-bottom: 3.5%;
+      }
+
+      nav .fa-brands {
+        color: #0378a6;
+      }
+
+      nav ul li:hover {
+        background-color: rgb(163, 183, 191);
+      }
+
+      nav ul li a:hover {
+        color: black;
+      }
+
+      nav ul li:last-child:hover {
+        padding-right: 2%;
+      }
+
+      nav ul li.active {
+        background-color: rgb(163, 183, 191);
+      }
+
+      nav ul li.active a {
+        color: black;
+      }
+
+      nav ul li a {
+        font-family: "Comfortaa", cursive;
+        color: #4d6873;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html" id="navbar-brand">
+        <img
+          src="images/MEME-logo-withText-blue.png"
+          style="display: inline-block; width: 350px"
+        />
+      </a>
+      <div id="nav-right">
+        <div class="brand-container">
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-square fa-2xl"></i>
+          </a>
+          <a href="https://twitter.com/">
+            <i class="fa-brands fa-twitter-square fa-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="classes.html">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--#region Step 14 -->
+    <header class="section-padding">
+      <h1 class="heading-style-top text-center">Our Classes</h1>
+    </header>
+    <!--#endregion //End Step -->
+
+    <main>
+      <!--#region Step 15 -->
+      <section class="section-padding bg-light-gray" id="class-topics">
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/post-system-pic.jpg"
+                alt="rows of gold PO boxes"
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-brand-blue">The Post</span>
+              <h4>Ever wondered how muggles send letters?</h4>
+              <p>
+                In this class we will work to understand how muggles send
+                written communication via a system called the Post. You will
+                discovered how to use the post, the purpose of those boxes in
+                front of muggle houses, what a stamp is, and who exactly the
+                mail carrier is.
+              </p>
+              <!-- This <a> is using a named anchor link which scrolls the user to the element with the supplied id (i.e. #class-list) on this page -->
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/travel-pic.jpg"
+                alt="man in airport with feet propped on suitcase looking an airplane taking off"
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-light-blue">Travel</span>
+              <h4>How do you travel without Portkeys or the Floo Network?</h4>
+              <p>
+                In this class we will teach you how to travel in the muggle
+                world. You will learn what a passport is and why it is
+                necessary. Additionally, we will provide instruction on
+                navigating many forms of public transportation.
+              </p>
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/automobile-pic.jpg"
+                alt="front end of a green vehicle with the Triumph brand name"
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-dark-blue">Automobiles</span>
+              <h4>What are those things that muggles drive around in?</h4>
+              <p>
+                In this class we discuss muggle personal transportation. Many
+                muggles own things called vehicles that they use to get
+                themselves from place to place. You will understand why vehicles
+                are so important in the muggle world.
+              </p>
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/school-pic.jpg"
+                alt="rows of desks sitting in a classroom"
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-brand-blue">School</span>
+              <h4>How do muggle children learn? Do they have to take tests?</h4>
+              <p>
+                In this class you will learn all about the muggle education
+                system. You will understand the different levels muggle children
+                progress through. We will discuss the evaluations that muggles
+                take and how they compare to O.W.L.'s.
+              </p>
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/football-pic.jpg"
+                alt="aerial picture of a football stadium at night with many fans and players on the field."
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-light-blue">Football</span>
+              <h4>What sports do muggle's play? Quidditch?</h4>
+              <p>
+                In this class you will work to understand the most popular
+                muggle sport, Football. We will discuss the rules of the games
+                and the popular teams. You will learn what you need to do to fit
+                in with muggle sports fans and how to participate in sporting
+                events.
+              </p>
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="images/Lore-Pic.jpeg"
+                alt="Silhouette of Sasquatch on mountain with firey sky in the background"
+              />
+            </div>
+            <div class="card-body text-center">
+              <span class="tag tag-dark-blue">Lore</span>
+              <h4>What are myths and what is make-believe?</h4>
+              <p>
+                In this class, you will discover the tales that make up muggle
+                lore. We will also discover how muggles came to believe that the
+                wizarding world is all make-believe. We will talk about lore
+                from around the muggle world.
+              </p>
+              <a href="#class-list" class="primary-button-large">
+                See classes
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- GoTo custom.css/step 16 -->
+      <!--#endregion //End Step 15 -->
+      <!--#region Step 17 -->
+      <section id="class-list" class="class-list section-padding">
+        <table class="table table-striped custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Course #</th>
+              <!-- The scope attribute here is used by screen reader devices to help identify the title of each column -->
+              <th scope="col">Name</th>
+              <th scope="col">Instructor</th>
+              <th scope="col">Days</th>
+              <th scope="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1392</td>
+              <td scope="row">The Post</td>
+              <!-- The scope attribute here is used to identify the "header" or key piece of information that this row is about -->
+              <td>
+                <a href="#">Georgie Weasley</a>
+                <small>Born prankster and experienced post user </small>
+              </td>
+              <td>Mon, Wed</td>
+              <td>1:00 PM - 3:00 PM</td>
+            </tr>
+            <tr>
+              <td>4616</td>
+              <td scope="row">Muggle Travel</td>
+              <td>
+                <a href="#">Charles Weasley</a>
+                <small
+                  >Frequent traveler and experienced at packing dragons</small
+                >
+              </td>
+              <td>Thurs</td>
+              <td>5:00 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+              <td>9841</td>
+              <td scope="row">Muggle Mobiles</td>
+              <td>
+                <a href="#">Rhonda Weasley</a>
+                <small>Has been muggle driving since Hogwarts</small>
+              </td>
+              <td>Mon, Fri</td>
+              <td>9:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+              <td>9548</td>
+              <td scope="row">Education System</td>
+              <td>
+                <a href="#">Flewww Weasley</a>
+                <small>Studied many different muggle education systems</small>
+              </td>
+              <td>Wed</td>
+              <td>11:00 AM - 1:00 PM</td>
+            </tr>
+            <tr>
+              <td>7346</td>
+              <td scope="row">Football: A Sport</td>
+              <td>
+                <a href="#">Herman Granger</a>
+                <small>Read all books in the library about Football</small>
+              </td>
+              <td>Sat</td>
+              <td>10:00 AM - 11:00 AM</td>
+            </tr>
+            <tr>
+              <td>8743</td>
+              <td scope="row">Lore & Mystery</td>
+              <td>
+                <a href="#">Harriett Potter</a>
+                <small>Years of experince living among muggles</small>
+              </td>
+              <td>Tue, Thurs</td>
+              <td>8:00 AM - 10:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- #endregion //End Step -->
+    </main>
+
+    <footer class="bg-light-gray">
+      <div class="text-center">
+        <div class="margin-bottom-2">
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-square fa-2xl"></i>
+          </a>
+          <a href="https://twitter.com/">
+            <i class="fa-brands fa-twitter-square fa-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+        <p class="font-black font-125">
+          &copy; Tek Ladder. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
